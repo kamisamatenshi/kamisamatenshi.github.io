@@ -1,21 +1,13 @@
 <! DOCTYPE html>
-<html>
+<html lang="en">
     
           <head>
             <title>&Cscr;&Hscr;&Uscr;&Nscr;&Gscr;  &Mscr;&Ascr;&Nscr;</title>
                  <link rel="icon" href="img/indexhead.png">
                  <link rel="stylesheet" href="css/main.css">      
               <meta charset="UTF-8">
-    </head>
-       
-    
-    
-     <!-- loader function -->
-      <body onload="myFunction()" style="margin: 0;">    
-          <div id="loader"></div>
-          <div style="display: none;" id="myDiv" class="animate-bottom ">
-              
-              
+    </head>           
+    <body>
               <!-- background effect -->
               <video autoplay muted loop id="myVideo">
               <source src="img/stars.webm" type="video/webm">
@@ -121,7 +113,7 @@
                         </span>
                   </div>
               </div>
-         </div>
+         
               <!-- parallex ends here-->          
               
               <!-- below dont touch -->
@@ -129,17 +121,7 @@
          
           
           <!-- how long the loader will last --><!--btw here is js-->
-          <script>
-              var myVar;
-              
-              function myFunction(){
-                  myVar = setTimeout(showPage,2000); //(showPage,x) x is the loading time
-              }
-              function showPage(){
-                  document.getElementById("loader").style.display="none";
-                  document.getElementById("myDiv").style.display="block";
-              }
-          </script>
+       
           <!-- loader settings -->
           
           
