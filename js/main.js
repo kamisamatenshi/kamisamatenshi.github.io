@@ -79,29 +79,44 @@ function myFunction() {
            $("#fl").fadeOut("slow");
        });
    }
-    setTimeout(fl,4000);
-  /////////////////////////////////////////////////
-const app = new Vue({
-  el:'#app',
+    setTimeout(fl,2000);
+    
+    const app = new Vue({
+  el: '#app',
   data: {
-    name: '',
-    age: 0
+    cats: [],
+    newCat: null
   },
   mounted() {
-    if (localStorage.name) {
-      this.name = localStorage.name;
-    }
-    if (localStorage.age) {
-      this.age = localStorage.age;
+    
+    if (localStorage.getItem('cats')) {
+      try {
+        this.cats = JSON.parse(localStorage.getItem('cats'));
+      } catch(e) {
+        localStorage.removeItem('cats');
+      }
     }
   },
   methods: {
-    persist() {
-      localStorage.name = this.name;
-      localStorage.age = this.age;
-      console.log('now pretend I did more stuff...');
+    addCat() {
+      // ensure they actually typed something
+      if (!this.newCat) {
+        return;
+      }
+      
+      this.cats.push(this.newCat);
+      this.newCat = '';
+      this.saveCats();
+    },
+    removeCat(x) {
+      this.cats.splice(x, 1);
+      this.saveCats();
+    },
+    saveCats() {
+      let parsed = JSON.stringify(this.cats);
+      localStorage.setItem('cats', parsed);
     }
   }
 })
-    
+  
 });

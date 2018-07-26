@@ -76,7 +76,7 @@ img {
 }
 
 /*2*/
-.cd-section:nth-of-type(2) {
+.just {
   background-image: url(../img/aprilbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +87,12 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100%;
+  position: relative;
+  padding: 2em 0;
 }
+
+
 .cd-section:nth-of-type(2) p {
   color: Balck;
 }
@@ -1068,16 +1073,8 @@ div#cloudr{
 }
 
 
-
-.sp{
-     position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    color:black;
-    font-size: 27px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    
+.cat {
+    top;50%;
+  width: 100px;
 }
 /* loading effect ends here */

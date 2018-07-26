@@ -100,13 +100,7 @@
          <a href="#section1" class="cd-scroll-down cd-img-replace" alt="scroll down">scroll down</a>
               </div>
 	<section id="section1" class="cd-section">
-        <div id="app" class="sp">
-  My name is <input v-model="name">
-  and I am <input v-model="age"> years old.
-  <p/>
-  <button @click="persist">Save</button>
-</div>
-          <p id="TIMER1">Now is already 2019 timer stop.
+    <p id="TIMER1">Now is already 2019 timer stop.
             </p>
         <h1><br>
         <br><br>
@@ -114,13 +108,29 @@
 	</section>
    
               
-	<section id="section2" class="cd-section">
-		<p>&ldquo;MACDONALD KFC PIZZAHUT BURGER KING DOMINO McCHICKEN McSPICY &rdquo;</p>
+	<section id="section2" class="just" >
+		 <div id="app">
+             
+  <h2>Cats</h2>
+     <div v-for="(cat,n) in cats">
+    <p>
+    <span class="cat">{{ cat }}</span> <button @click="removeCat(n)">Remove</button>
+    </p>
+  </div>
+  <p>
+     
+    <input v-model="newCat"> 
+    <button @click="addCat">Add Cat</button>
+             </p>
+    
+  
+  
+</div>
 	</section>
     
 
 	<section id="section3" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+		
 	</section>
     
 
@@ -142,16 +152,19 @@
         
 	</section>
        <div class="edp4" id="thankyou">
+            
                    <div class="ptext">
-                        <span class="border1">
+                                   <span class="border1">
                                &Bscr;&Yscr; &Cscr;&Hscr;&Uscr;&Nscr;&Gscr; &Mscr;&Ascr;&Nscr;
                         </span>
                   </div>
+           
               </div>
 
 
 	
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script>
+<script src="js/resposive.js"></script>
 </body>
 </html>
