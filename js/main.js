@@ -79,6 +79,6 @@ function myFunction() {
            $("#fl").fadeOut("slow");
        });
    }
-    setTimeout(fl,2000);
+    setTimeout(fl,4000);
   
 });
