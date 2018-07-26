@@ -1066,4 +1066,18 @@ div#cloudr{
         opacity:0;
     }
 }
+
+
+
+.sp{
+     position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 27px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
 /* loading effect ends here */
