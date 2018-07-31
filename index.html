@@ -111,16 +111,16 @@
 	<section id="section2" class="just" >
 		 <div id="app">
              
-  <h2>Cats</h2>
-     <div v-for="(cat,n) in cats">
+  <h2>Add something in</h2>
+     <div v-for="(stuff,n) in stuffs">
     <p>
-    <span class="cat">{{ cat }}</span> <button @click="removeCat(n)">Remove</button>
+    <span class="stuff">{{ stuff }}</span> <button @click="removeStuff(n)">Remove</button>
     </p>
   </div>
   <p>
      
-    <input v-model="newCat"> 
-    <button @click="addCat">Add Cat</button>
+    <input v-model="newStuff"> 
+    <button @click="addStuff">Add in</button>
              </p>
     
   
